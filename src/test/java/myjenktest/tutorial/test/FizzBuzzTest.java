@@ -15,18 +15,13 @@ public class FizzBuzzTest {
 	
 	@DisplayName("Play FizzBuzz with number=1")//ciò che comparirà nel report
 	@Test
-	
-	
-	
 	public void testNumber() {
 		String risultato=fb.play(1);
-		Assertions.assertEquals(risultato,"1"); //compara il risultato ottenuto con quello pianificato
+		Assertions.assertEquals(risultato,"200"); //compara il risultato ottenuto con quello pianificato
 												//se non coincidono, il test non va a buon fine
 	}
 	
-	
 	/*
-	
 	@DisplayName("Play FizzBuzz with number=1, verifica con 'ciao'")//ciò che comparirà nel report
 	@Test
 	public void testNumber() {
@@ -34,7 +29,13 @@ public class FizzBuzzTest {
 		Assertions.assertEquals(risultato,"ciao"); //compara il risultato ottenuto con quello pianificato
 												//se non coincidono, il test non va a buon fine
 	}
-	
 	*/
+	
+	@DisplayName("Play FizzBuzz with number=3")
+	@Test
+	public void testFizz() {
+		String risultato=fb.play(3);
+		Assertions.assertEquals(risultato, "Fizz");
+	}
 
 }
