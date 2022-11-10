@@ -15,6 +15,7 @@ public class FizzBuzzTest {
 	
 	@DisplayName("Play FizzBuzz with number=1")//ciò che comparirà nel report
 	@Test
+	
 	public void testNumber() {
 		String risultato=fb.play(1);
 		Assertions.assertEquals(risultato,"1"); //compara il risultato ottenuto con quello pianificato
