@@ -20,7 +20,7 @@ public class FizzBuzzTest {
 		Assertions.assertEquals(risultato,"1"); //compara il risultato ottenuto con quello pianificato
 												//se non coincidono, il test non va a buon fine
 	}
-	*/
+	*/ 
 	
 	@DisplayName("Play FizzBuzz with number=1, verifica con 'ciao'")//ciò che comparirà nel report
 	@Test
